@@ -1,0 +1,31 @@
+//buttons
+.btn
+	display: inline-block
+	vertical-align: top
+	padding: 1.05em 1.7em
+	border: 1px solid $gray
+	border-radius: 1.8em
+	background: none
+	cursor: pointer
+	font-family: inherit
+	font-size: rem(16)
+	line-height: 1.1
+	color: $black
+	text-transform: uppercase
+	text-align: center
+	@include transition
+
+	&:focus
+		outline: none
+
+	&:hover
+		background-color: $black
+		color: $white
+		border-color: $black
+
+	//modificators
+	&--sm
+		padding: .5em .5em
+		font-size: rem(14)
+		font-weight: 700
+		border-width: 2px

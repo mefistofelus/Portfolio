@@ -1,0 +1,57 @@
+.articles
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -1rem
+
+  &__col
+    width: 33.33333%
+    padding: 0 1rem
+
+  &__item
+    margin-bottom: 2rem
+
+  &__header
+    margin-bottom: rem(20)
+    position: relative
+
+  &__date
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 77px
+    height: 77px
+    background-color: $black
+    font-size: rem(16)
+    text-align: center
+    line-height: rem(21)
+    color: $white
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+
+  &__title
+    margin-bottom: .5rem
+    font-size: 1.2rem
+    color: $black
+    text-transform: uppercase
+    font-weight: 700
+
+    a
+      color: inherit
+
+      &:hover
+        text-decoration: underline
+
+  &__cat
+    margin-bottom: rem(23)
+    font-size: 0.8rem
+    color: $black
+    text-transform: uppercase
+
+  &__text
+    margin-bottom: rem(23)
+    font-size: rem(12)
+    color: $gray
+    font-weight: 300
+    line-height: 2

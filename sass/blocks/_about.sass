@@ -1,0 +1,52 @@
+.about
+  margin: rem(126) 0
+
+.about__inner
+  display: flex
+  max-width: 1090px
+
+.about__photo,
+.about__content
+  width: 50%
+
+.about__photo
+  position: relative
+  img
+    position: relative
+    z-index: 2
+  &:before
+    content: ''
+    width: rem(413)
+    height: rem(413)
+    background-color: #efefef
+    position: absolute
+    left: 1rem
+    bottom: 0
+    z-index: -1
+
+.about__content
+  padding-left: 3.1rem
+  margin-top: 2rem
+
+.about__title
+  font-size: 3rem
+  font-weight: 700
+  color: $black
+  text-transform: uppercase
+
+.about__title--lg
+  position: relative
+  left: -10px
+  margin-bottom: rem(21)
+  font-size: rem(92)
+  font-weight: 700
+  line-height: 1.1
+  color: rgba($black, .15)
+  text-transform: uppercase
+
+.about__text
+  margin-bottom: rem(40)
+  font-size: .8rem
+  font-weight: 300
+  line-height: 2
+  color: $gray

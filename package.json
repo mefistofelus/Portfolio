@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --recursive",
+    "serve": "browser-sync start --server --files '*.html, css/*.css, js/*.js'"
+  },
+  "author": "Vasiliy Manilo",
+  "license": "ISC",
+  "dependencies": {
+    "parallelshell": "^3.0.2"
+  }
+}

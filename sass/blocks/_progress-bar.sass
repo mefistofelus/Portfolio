@@ -1,0 +1,26 @@
+.progress-bar
+  &__item
+    margin-bottom: 0.3rem
+    display: flex
+    align-items: center
+
+  &__left
+    width: rem(150)
+    overflow: hidden
+
+  &__title
+    font-size: 0.94rem
+    font-weight: 300
+
+  &__right
+    padding-left: 1.2rem
+
+  &__bar
+    width: rem(139)
+    height: 6px
+    background-color: #EFEFEF
+
+  &__progress
+    height: 100%
+    background-color: $gray
+    @include transition

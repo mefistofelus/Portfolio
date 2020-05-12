@@ -1,0 +1,12 @@
+.social
+	display: flex
+	margin-bottom: rem(42)
+
+	.social__link
+		@include transition
+
+		+ .social__link
+			margin-left: rem(10)
+
+		&:hover
+			transform: translateY(-5px)

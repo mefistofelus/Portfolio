@@ -1,0 +1,49 @@
+.nav__list
+	display: flex
+	align-items: center
+	.nav__link
+		font-size: 0.9rem
+		font-weight: 700
+		text-transform: uppercase
+		padding: 0.66rem 2rem
+		border: 2px solid transparent
+
+		&--btn,
+			border: 2px solid $black
+			border-radius: 20px
+			@include transition
+
+			&:hover
+				background-color: $black
+				& > a
+					color: $white
+
+			& > a::after
+				display: none
+		a
+			text-decoration: none
+			color: $black
+			position: relative
+
+			&::after
+				position: absolute
+				content: ''
+				bottom: -0.5rem
+				left: 0
+				width: 0
+				height: 1px
+				background-color: $black
+				//transform: scaleX(0)
+				transition: all .25s ease-out
+
+			&:hover::after
+				width: 100%
+				//transform: scaleX(1)
+		&.current-menu-item a::before
+			position: absolute
+			content: ''
+			bottom: -0.5rem
+			left: 0
+			width: 100%
+			height: 1px
+			background-color: $black

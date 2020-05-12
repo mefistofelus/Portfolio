@@ -1,0 +1,48 @@
+.footer
+	padding: rem(18) 0
+	width: 100%
+	background-color: $black
+
+	&__inner
+		display: flex
+		justify-content: space-between
+
+	&__credits
+		display: flex
+		align-items: center
+
+	&__copyright
+		padding-right: rem(12)
+		margin-right: rem(12)
+		font-size: rem(14)
+		color: #BBBBCC
+		border-right: 1px solid rgba($gray, .35)
+
+	&__social
+		display: flex
+		align-items: center
+
+		&--link
+			display: inline-block
+			margin-right: 1rem
+
+	&__nav
+		display: flex
+		align-items: center
+		font-size: rem(14)
+
+		&-link
+			margin-left: 1.2rem
+			color: $gray
+
+			&--btn
+				padding: .5rem 1.4rem
+				border: 1px solid $gray
+				border-radius: 20px
+				line-height: 1.1
+				@include transition
+
+				&:hover
+					background-color: $gray
+					border-color: $gray
+					color: $white
